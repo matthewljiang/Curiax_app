@@ -16,7 +16,6 @@ CuriaxApp::Application.routes.draw do
   get "companys/delete"
   get "comments/show"
   get "comments/index"
-  root :to => "index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
