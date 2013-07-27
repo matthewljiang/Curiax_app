@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>CuriaxApp</title>
+<<<<<<< HEAD
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tags %>
@@ -9,8 +10,20 @@
 <body>
 
 <%= render "layouts/header"%>
+=======
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= render "layouts/header" %>
+
+<div class="container">
+>>>>>>> 79bd2144c756e4ea99f6420e40c1cc49657ac84e
 <%= render "layouts/sidebar" %>
 <%= yield %>
+</div>
+
 <%=render "layouts/footer"%>
 <%= yield %>
 >>>>>>> 62782397a40dbb046262e6f1f424d61f13e27f5e
