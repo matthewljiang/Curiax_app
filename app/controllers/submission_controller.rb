@@ -1,21 +1,13 @@
-class UsersController < ApplicationController
+class SubmissionController < ApplicationController
   def show
-
   end
 
   def index
-
-  end
-
-  def login
-
   end
 
   def create
-
   end
 
   def settings
-  	
   end
 end
