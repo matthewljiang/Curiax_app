@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CuriaxApp</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <meta content="width=device-width,minimum-scale=1,maximum-scale=1" name="viewport">
 
+    <link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+    <link href="../../assets/stylesheets/style.css" rel="stylesheet" type="text/css">
 
-</body>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.js"></script>
+    
+    <script type="text/javascript">
+      //<![CDATA[ 
+// ^= Script for mouse cursor tracking
+$(function(){
+    $('#menu').hover(function(){
+        $(this).animate({width:'250px'},1);
+    },function(){
+        $(this).animate({width:'10px'},1);
+    }).trigger('mouseleave');
+});
+      $(window).load(function(){
+        changeContent = function(key) {
+          html = textHash[key];
+          $('#content').html(html);
+        }
+        
+        $("#menu a").click(function(e) {
+          $('#menu').collapse('hide');
+          changeContent(e.target.innerText);
+        });       
+        textHash = {
+		  "Home": "<h1> Home </p>",
+          "1": "<h1>Text1</p>",
+          "2": "<h1>Text2</p>",
+          "3": "<h1>Text3</p>"
+        };
+      });//]]>  
+    </script>	
+
+  </head>
+  <body>
+    <div class="viewport">
+      <div class="frame">
+        <div id="menu" class="menu nav-collapse collapse width">
+          <div class="collapse-inner">
+            <div class="navbar navbar-inverse">
+              <div class="navbar-inner">
+                Menu
+              </div>
+            </div>
+            <ul class="nav nav-tabs nav-stacked">
+              <li><a>Home</a></li>
+              <li><a>1</a></li>
+              <li><a>2</a></li>
+              <li><a>3</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="view">
+          <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+            </div>
+          </div>
+          <div id="content">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
+
