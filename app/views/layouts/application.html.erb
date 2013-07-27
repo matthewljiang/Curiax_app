@@ -2,16 +2,13 @@
 <html>
 <head>
   <title>CuriaxApp</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render "layouts/sidebar" %>
+<%= render layout: "layouts/footer" %>
 <%= yield %>
-<%=render "layouts/footer"%>
-<%= yield %>
-<%= render "layout/test"%>
-<%= yield %>
+
 </body>
 </html>
