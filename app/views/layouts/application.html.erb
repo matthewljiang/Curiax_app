@@ -14,10 +14,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<<<<<<< HEAD
 <div class="container">
 <%= render "layouts/sidebar" %>
 <%= yield %>
+=======
+<div style="height: 5%">
+<%= render "layouts/header" %>
+>>>>>>> e46e940024098d42d57283e689a2a8fe6c705938
 </div>
+<div class="container" style="height: 90%">
+	<%= render "layouts/sidebar" %>
+	<%= yield %>
+</div>
+<div style="height: 5%"
 <%=render "layouts/footer"%>
 
 </body>

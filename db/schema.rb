@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20130726140202) do
+=======
+ActiveRecord::Schema.define(version: 20130729133635) do
+>>>>>>> e46e940024098d42d57283e689a2a8fe6c705938
 
   create_table "comments", force: true do |t|
     t.text     "title"
@@ -32,6 +36,14 @@ ActiveRecord::Schema.define(version: 20130726140202) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
+=======
+  create_table "pages", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+>>>>>>> e46e940024098d42d57283e689a2a8fe6c705938
   create_table "seminars", force: true do |t|
     t.string   "sem_name"
     t.text     "sem_description"
