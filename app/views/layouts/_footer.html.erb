@@ -1,18 +1,24 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
  <footer class="row">
     <div class="large-12 columns">
-      <hr />
+	<hr/>
       <div class="row">
         <div class="large-6 columns">
-          
         </div>
         <div class="small-10 columns">
           <ul class="inline-list right">
-            <li><%= link_to 'Home','/'%></li>
-            <li><a href="*">Network</a></li>
-            <li><a href="*">Seminars</a></li>
-            <li><a href="*">Profile</a></li>
-            <li><a href="*">Organizations</a></li>
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Network', '*' %></li>
+            <li><%= link_to 'Seminar', seminars_index_path %></li>
+            <li><%= link_to 'Profile', users_index_path %></li>
+            <li><%= link_to 'Organizations', comments_index_path %></li>
           </ul>
         </div>
       </div>

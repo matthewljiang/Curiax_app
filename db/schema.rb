@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 # encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
@@ -12,7 +15,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20130716224527) do
+=======
+ActiveRecord::Schema.define(version: 20130729133635) do
+>>>>>>> master
 
   create_table "comments", force: true do |t|
     t.text     "title"
@@ -28,6 +35,7 @@ ActiveRecord::Schema.define(version: 20130716224527) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
   create_table "seminars", force: true do |t|
     t.string   "sem_name"
     t.text     "sem_description"
@@ -69,11 +77,18 @@ ActiveRecord::Schema.define(version: 20130726140202) do
   create_table "companies", force: true do |t|
     t.string   "comp_name"
     t.text     "comp_description"
+=======
+  create_table "homes", force: true do |t|
+>>>>>>> master
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
   create_table "homes", force: true do |t|
+=======
+  create_table "pages", force: true do |t|
+>>>>>>> master
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -93,4 +108,7 @@ ActiveRecord::Schema.define(version: 20130726140202) do
   end
 
 end
+<<<<<<< HEAD
 >>>>>>> 9d40cf30b1d3715e9945a9e13fe95db5c233fc03
+=======
+>>>>>>> master
