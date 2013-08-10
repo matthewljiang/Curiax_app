@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   end
 
   def login
-
+    before_filter :authenticate_user!
   end
 
   def create
