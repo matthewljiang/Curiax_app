@@ -1,13 +1,13 @@
 CuriaxApp::Application.routes.draw do
-<<<<<<< HEAD
-  resources :pages
-
-=======
 
   resources :pages
 
 
->>>>>>> 3a5e2f0be8277d9822fa4b427ad21fcf6557d6bf
+
+  resources :pages
+
+
+
   get "companys/settings"
   get "seminars/settings"
   get "users/settings"
@@ -29,15 +29,13 @@ CuriaxApp::Application.routes.draw do
 root :to => "homes#index"
 get "home", :to => "homes#index"
 
-<<<<<<< HEAD
+
   get "comments/index"
   get "home", :to => "pages#home"
 
   
 
 
-=======
->>>>>>> 22ad89d1e0b42b75fa39998da661edd75111f19d
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
