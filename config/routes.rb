@@ -1,6 +1,13 @@
 CuriaxApp::Application.routes.draw do
+<<<<<<< HEAD
   resources :pages
 
+=======
+
+  resources :pages
+
+
+>>>>>>> 3a5e2f0be8277d9822fa4b427ad21fcf6557d6bf
   get "companys/settings"
   get "seminars/settings"
   get "users/settings"
