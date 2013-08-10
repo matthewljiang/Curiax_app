@@ -27,7 +27,7 @@ get "home", :to => "homes#index"
 
   get "comments/index"
   get "home", :to => "pages#home"
-  root :to => "pages#home"
+
   
 
 
