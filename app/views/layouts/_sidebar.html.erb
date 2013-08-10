@@ -40,32 +40,52 @@ $(function(){
 
   </head>
   <body>
-    <div class="viewport">
-      <div class="frame">
-        <div id="menu" class="menu nav-collapse collapse width">
-          <div class="collapse-inner" style="width: 200px">
-            <div class="sidebar_style">
-              <div class="navbar navbar-inverse">
-                <div class="navbar-inner">
-                  Menu
+     <div class="viewport">
+
+         <div class="frame">
+
+             <div id="menu" class="menu nav-collapse collapse width">
+
+                 <div class="collapse-inner" style="width: 200px">
+
+                     <div class="sidebar_style">
+
+                         <div class="navbar navbar-inverse">
+
+                             <div class="navbar-inner">
+                                 Menu
+                             </div>
+
+                         </div>
+
+                         <ul class="nav nav-tabs nav-stacked">
+                             <li><%= link_to 'Home', home_path %></li>
+                             <li><a>1</a></li>
+                             <li><a>2</a></li>
+                             <li><a>3</a></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+			</div>
+		</div>
+		<div class = "frame">
+	
+	
+	         <div class="view">
+
+
+                <div id="content">
+				
+                   <%=yield%>
+
                 </div>
-              </div>
-              <ul class="nav nav-tabs nav-stacked">
-                <li><%= link_to 'Home', home_path %></li>
-                <li><a>1</a></li>
-                <li><a>2</a></li>
-                <li><a>3</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
+             </div>
+		</div>
+	
+            
         
-
-
-  
-
-  </div>
   </body>
 </html>
 
