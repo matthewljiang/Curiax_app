@@ -58,11 +58,6 @@ ActiveRecord::Schema.define(version: 20130803173341) do
   add_index "companies", ["email"], name: "index_companies_on_email", unique: true
   add_index "companies", ["reset_password_token"], name: "index_companies_on_reset_password_token", unique: true
 
-  create_table "homes", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "pages", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
