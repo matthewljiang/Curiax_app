@@ -6,6 +6,7 @@ class SeminarsController < ApplicationController
   end
 
   def create
+  	@seminar = Seminar.new()
   end
 
   def settings

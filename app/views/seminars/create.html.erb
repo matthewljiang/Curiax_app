@@ -6,12 +6,32 @@
 <input type="hidden" name="action" value="login">
 <input type="hidden" name="hide" value="password">
 <center><table>
-<tr><td><font face="verdana,arial" size=-1>Login:</font></td><td><input type="text" name="username"></td></tr>
-<tr><td><font face="verdana,arial" size=-1>Password:</font></td><td><input type="password" name="password"></td></tr>
-<tr><td><font face="verdana,arial" size=-1>&nbsp;</font></td><td><font face="verdana,arial" size=-1><input type="submit" value="Enter"></font></td></tr>
-<tr><td colspan=2><font face="verdana,arial" size=-1>&nbsp;</font></td></tr>
-<tr><td colspan=2><font face="verdana,arial" size=-1>Lost your username or password? Find it <a href="http://www.authpro.com/auth/orthodoxrings/?action=lost">here</a>!</font></td></tr>
+<tr><td></td><td>
+
+<div class = "row">
+<div class = "large-12 column"
+
+<%= form_tag("/seminars", method: "create") do %>
+<%= label_tag(:sem_name, "Seminar Name:") %>
+<%= text_field_tag(:sem_name)%>
+<%= label_tag(:sem_description, "Description:")%>
+<%= text_field_tag(:sem_description)%>
+<%= submit_tag("Login")%>
+<%end%>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<tr><td colspan=2><font face="verdana,arial" size=-1>Lost your username or password? 
+<%= link_to("Find it","*")%>
+	</font></td></tr>
 <tr><td colspan=2><font face="verdana,arial" size=-1>Not member yet? Click <a href="http://www.authpro.com/auth/orthodoxrings/?action=reg">here</a> to register.</font></td></tr>
 </table></center>
 </td></tr></table></td></tr></table>
-<p>Find me in app/views/seminars/create.html.erb</p>
+
