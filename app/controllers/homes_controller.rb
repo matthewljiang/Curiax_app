@@ -1,4 +1,5 @@
-class SeminarsController < ApplicationController
+class HomesController < ApplicationController
+
   def show
   end
 
@@ -6,9 +7,12 @@ class SeminarsController < ApplicationController
   end
 
   def create
-  	@seminar = Seminar.new()
   end
 
   def settings
   end
+
+	def index
+	end
+
 end
