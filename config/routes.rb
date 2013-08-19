@@ -1,6 +1,8 @@
 CuriaxApp::Application.routes.draw do
 
 
+  devise_for :hosts
+  devise_for :attendees
   resources :pages
 
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130803173341) do
+ActiveRecord::Schema.define(version: 20130819020954) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -30,6 +30,24 @@ ActiveRecord::Schema.define(version: 20130803173341) do
 
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+
+  create_table "attendees", force: true do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "attendees", ["email"], name: "index_attendees_on_email", unique: true
+  add_index "attendees", ["reset_password_token"], name: "index_attendees_on_reset_password_token", unique: true
 
   create_table "comments", force: true do |t|
     t.text     "title"
@@ -57,6 +75,24 @@ ActiveRecord::Schema.define(version: 20130803173341) do
 
   add_index "companies", ["email"], name: "index_companies_on_email", unique: true
   add_index "companies", ["reset_password_token"], name: "index_companies_on_reset_password_token", unique: true
+
+  create_table "hosts", force: true do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "hosts", ["email"], name: "index_hosts_on_email", unique: true
+  add_index "hosts", ["reset_password_token"], name: "index_hosts_on_reset_password_token", unique: true
 
   create_table "pages", force: true do |t|
     t.datetime "created_at"
