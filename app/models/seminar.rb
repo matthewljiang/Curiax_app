@@ -1,5 +1,5 @@
 class Seminar < ActiveRecord::Base
-	belongs_to :company
-	has_and_belongs_to_many :users
+	belongs_to :host
+	has_and_belongs_to_many :attendees
 	has_many :comments
 end
