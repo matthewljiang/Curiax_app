@@ -5,10 +5,6 @@ CuriaxApp::Application.routes.draw do
   devise_for :attendees
   resources :pages
 
-
-
-
-
   get "companys/settings"
   get "seminars/settings"
   get "users/settings"
